@@ -13,6 +13,7 @@
 		B25E885329695EB300156799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25E885129695EB300156799 /* Main.storyboard */; };
 		B25E885529695EB600156799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25E885429695EB600156799 /* Assets.xcassets */; };
 		B25E885829695EB600156799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25E885629695EB600156799 /* LaunchScreen.storyboard */; };
+		B25E886129696AF300156799 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E886029696AF300156799 /* AlbumModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B25E885429695EB600156799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B25E885729695EB600156799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B25E885929695EB600156799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25E886029696AF300156799 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		B25E884A29695EB300156799 /* easycomExam */ = {
 			isa = PBXGroup;
 			children = (
+				B25E885F29696ADA00156799 /* Model */,
 				B25E884B29695EB300156799 /* AppDelegate.swift */,
+				B25E886229696C4400156799 /* Controller */,
 				B25E884D29695EB300156799 /* SceneDelegate.swift */,
-				B25E884F29695EB300156799 /* ViewController.swift */,
 				B25E885129695EB300156799 /* Main.storyboard */,
 				B25E885429695EB600156799 /* Assets.xcassets */,
 				B25E885629695EB600156799 /* LaunchScreen.storyboard */,
 				B25E885929695EB600156799 /* Info.plist */,
 			);
 			path = easycomExam;
+			sourceTree = "<group>";
+		};
+		B25E885F29696ADA00156799 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25E886029696AF300156799 /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B25E886229696C4400156799 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25E884F29695EB300156799 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25E885029695EB300156799 /* ViewController.swift in Sources */,
+				B25E886129696AF300156799 /* AlbumModel.swift in Sources */,
 				B25E884C29695EB300156799 /* AppDelegate.swift in Sources */,
 				B25E884E29695EB300156799 /* SceneDelegate.swift in Sources */,
 			);
