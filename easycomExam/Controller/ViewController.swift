@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var data = [AlbumModel]()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         fetchingAPIData(URL: "https://jsonplaceholder.typicode.com/photos") { result in
             print(result)
+            self.data = result
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -35,3 +43,16 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        cell.apiLabel.text = data[indexPath.row].title
+        return cell
+    }
+    
+    
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B247802C2969C63E00CFC67E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247802B2969C63E00CFC67E /* CustomTableViewCell.swift */; };
 		B25E884C29695EB300156799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E884B29695EB300156799 /* AppDelegate.swift */; };
 		B25E884E29695EB300156799 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E884D29695EB300156799 /* SceneDelegate.swift */; };
 		B25E885029695EB300156799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E884F29695EB300156799 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B247802B2969C63E00CFC67E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		B25E884829695EB300156799 /* easycomExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easycomExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25E884B29695EB300156799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B25E884D29695EB300156799 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B247802A2969C55400CFC67E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25E885129695EB300156799 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B25E883F29695EB300156799 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +68,11 @@
 		B25E884A29695EB300156799 /* easycomExam */ = {
 			isa = PBXGroup;
 			children = (
-				B25E885F29696ADA00156799 /* Model */,
 				B25E884B29695EB300156799 /* AppDelegate.swift */,
-				B25E886229696C4400156799 /* Controller */,
 				B25E884D29695EB300156799 /* SceneDelegate.swift */,
-				B25E885129695EB300156799 /* Main.storyboard */,
+				B25E885F29696ADA00156799 /* Model */,
+				B247802A2969C55400CFC67E /* View */,
+				B25E886229696C4400156799 /* Controller */,
 				B25E885429695EB600156799 /* Assets.xcassets */,
 				B25E885629695EB600156799 /* LaunchScreen.storyboard */,
 				B25E885929695EB600156799 /* Info.plist */,
@@ -82,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B25E884F29695EB300156799 /* ViewController.swift */,
+				B247802B2969C63E00CFC67E /* CustomTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25E885029695EB300156799 /* ViewController.swift in Sources */,
+				B247802C2969C63E00CFC67E /* CustomTableViewCell.swift in Sources */,
 				B25E886129696AF300156799 /* AlbumModel.swift in Sources */,
 				B25E884C29695EB300156799 /* AppDelegate.swift in Sources */,
 				B25E884E29695EB300156799 /* SceneDelegate.swift in Sources */,
