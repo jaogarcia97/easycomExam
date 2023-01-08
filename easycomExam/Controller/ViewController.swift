@@ -66,7 +66,7 @@ extension ViewController : UITableViewDataSource,UITableViewDelegate{
         if segue.identifier == "showDetails" {
             let detailVC = segue.destination as! DetailViewController
             let indexSelected: Int = tableView.indexPathForSelectedRow!.row
-            
+            detailVC.fullImageURL = data[indexSelected].url
             detailVC.titleValue = data[indexSelected].title
             print(data[indexSelected].title) //TEST
             print(tableView.indexPathForSelectedRow!.row) //TEST

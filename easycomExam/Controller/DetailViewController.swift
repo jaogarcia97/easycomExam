@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var detApiImage: UIImageView!
     @IBOutlet weak var detApiLabel: UILabel!
+    
+    var fullImageURL:String = "https://via.placeholder.com/600/92c952"
     var titleValue:String = ""
     
     override func viewDidLoad() {
@@ -19,6 +21,7 @@ class DetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         detApiLabel.text = titleValue
+        detApiImage.downloaded(from: fullImageURL, contentMode: .scaleToFill)
     }
     
 
