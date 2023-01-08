@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UITableViewDataSource{
+extension ViewController : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -58,6 +58,20 @@ extension ViewController : UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            let detailVC = segue.destination as! DetailViewController
+            let indexSelected: Int = tableView.indexPathForSelectedRow!.row
+            
+            detailVC.titleValue = data[indexSelected].title
+            print(data[indexSelected].title) //TEST
+            print(tableView.indexPathForSelectedRow!.row) //TEST
+        }
+    }
 }
 
 extension UIImageView {

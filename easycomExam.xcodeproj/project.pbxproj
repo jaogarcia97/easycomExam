@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B247802C2969C63E00CFC67E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247802B2969C63E00CFC67E /* CustomTableViewCell.swift */; };
+		B24825B6296B0A650010EAAD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24825B5296B0A650010EAAD /* DetailViewController.swift */; };
 		B25E884C29695EB300156799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E884B29695EB300156799 /* AppDelegate.swift */; };
 		B25E884E29695EB300156799 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E884D29695EB300156799 /* SceneDelegate.swift */; };
 		B25E885029695EB300156799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E884F29695EB300156799 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B247802B2969C63E00CFC67E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B24825B5296B0A650010EAAD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B25E884829695EB300156799 /* easycomExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easycomExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25E884B29695EB300156799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B25E884D29695EB300156799 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				B25E884F29695EB300156799 /* ViewController.swift */,
 				B247802B2969C63E00CFC67E /* CustomTableViewCell.swift */,
+				B24825B5296B0A650010EAAD /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				B25E885029695EB300156799 /* ViewController.swift in Sources */,
 				B247802C2969C63E00CFC67E /* CustomTableViewCell.swift in Sources */,
 				B25E886129696AF300156799 /* AlbumModel.swift in Sources */,
+				B24825B6296B0A650010EAAD /* DetailViewController.swift in Sources */,
 				B25E884C29695EB300156799 /* AppDelegate.swift in Sources */,
 				B25E884E29695EB300156799 /* SceneDelegate.swift in Sources */,
 			);
